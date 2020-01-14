@@ -1,0 +1,12 @@
+# Global (should be in global file of your system)
+*~
+.DS_Store
+
+# PhpStorm (JetBrains) specific
+.idea/
+
+# Vagrant specific
+.vagrant/
+.vagrantuser
+Vagrantfile
+_scripts

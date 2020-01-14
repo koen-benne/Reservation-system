@@ -1,0 +1,17 @@
+[14-01-2020 14:58] Class \System\Handlers\NotFoundHandler does not exist! on line 65 of /var/source/app/classes/ReservationSystem/Bootstrap/WebBootstrap.php
+[14-01-2020 15:00] Route does not exist on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 15:01] Object of class ReservationSystem\Handlers\NotFoundHandler could not be converted to string on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 15:02] Route index does not exist on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 15:03] Route index does not exist on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 15:07] Route does not exist on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 15:07] Route does not exist on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 15:07] Route index does not exist on line 70 of /var/source/app/classes/ReservationSystem/Handlers/BaseHandler.php
+[14-01-2020 18:54] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 18:54] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 18:54] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 18:55] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 18:56] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 18:57] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 18:57] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 19:00] Undefined property: ReservationSystem\Utils\Time::$toHours on line 44 of /var/source/app/templates/reservation/weekVieuw.php
+[14-01-2020 19:06] Use of undefined constant hoursAmount - assumed 'hoursAmount' (this will throw an Error in a future version of PHP) on line 44 of /var/source/app/templates/reservation/weekVieuw.php

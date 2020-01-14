@@ -1,0 +1,24 @@
+{
+  "name": "koen-benne/reservation-system",
+  "license": "MIT",
+  "description": "Reservation system",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Koen Benne",
+      "email": "koen.benne@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+
+  "config": {
+    "vendor-dir": "app/vendor"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "ReservationSystem\\": "app/classes/ReservationSystem"
+    }
+  }
+}

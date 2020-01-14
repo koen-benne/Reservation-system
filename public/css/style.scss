@@ -1,0 +1,139 @@
+$halfHourHeight: 30px;
+$backgroundColor: #DDDDDD;
+
+body {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  font-family: sans-serif, Helvetica, Arial;
+  max-width: 1200px;
+}
+
+header {
+  display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#planning {
+  width: 100%;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+#hours {
+  background-color: lightgray;
+  padding: 0;
+}
+
+#planning th {
+  border-top: 1px solid grey;
+  border-collapse: collapse;
+  width: 14%;
+  padding: 0;
+}
+
+.day {
+  padding: 0;
+  position: relative;
+}
+
+.first {
+  height: $halfHourHeight;
+  background-color: $backgroundColor;
+  padding: 0;
+  border: 1px grey;
+  border-top-style: solid;
+  border-left-style: solid;
+  text-align: center;
+}
+.second {
+  height: $halfHourHeight;
+  background-color: $backgroundColor;
+  padding: 0;
+  border-color: grey;
+  border-top-style: dashed;
+  border-width: 1px;
+  border-left-style: solid;
+  text-align: center;
+}
+
+#hourLabel {
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+#weekLabel {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  margin: 0;
+}
+
+#weekSelector {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: 5px;
+}
+
+#nextWeekBtn {
+  font-size: 15px;
+  border-radius: 5px;
+  height: 20px;
+  background: none;
+  width: 20px;
+}
+
+#previousWeekBtn {
+  font-size: 15px;
+  border-radius: 5px;
+  height: 20px;
+  background: none;
+  width: 20px
+}
+
+.block {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+}
+
+.reservationBlock {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #1494fc;
+}
+
+.daysBackground {
+  width: 100%;
+}
+
+.blocks {
+  width: 100%;
+  height: 100%;
+}
+
+.blockContent {
+
+}
+
+.blockTimeBar {
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: blue;
+  height: 20px;
+  border-bottom: 1px solid black;
+}
+
+.block div {
+  color: white;
+}
