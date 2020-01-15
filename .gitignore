@@ -10,3 +10,6 @@
 .vagrantuser
 Vagrantfile
 _scripts
+
+# Logs folder
+app/logs/

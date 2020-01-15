@@ -1,4 +1,5 @@
 <?php
 $routes = [
-    '' => 'ReservationHandler@weekVieuw'
+    '/' => 'ReservationHandler@weekVieuw',
+    '/login' => 'AccountHandler@login'
 ];

@@ -1,6 +1,16 @@
 <header>
-    <img src=<?= LOGO_PATH ?>>
+    <img id="logo" src=<?= LOGO_PATH ?>>
     <h1><?= $pageTitle ?? '' ?></h1>
+    <?php if($isLoggedIn ?? false): ?>
+        <div id="login">
+            <p>Username</p>
+            <a>Log Out</a>
+        </div>
+    <?php else: ?>
+        <div id="login">
+            <a href="login">Log In</a>
+        </div>
+    <?php endif ?>
 </header>
 <div>
     <div>
