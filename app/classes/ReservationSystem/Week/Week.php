@@ -48,7 +48,7 @@ abstract class Week
     public static function isOnSeasonWeek(int $weekNumber) : bool
     {
         //Return true if the given week is within the beach volleyball season
-        if ($weekNumber > SEASON_START && $weekNumber < SEASON_END) {
+        if ($weekNumber >= SEASON_START && $weekNumber <= SEASON_END) {
             return true;
         } else {
             return false;
@@ -69,7 +69,7 @@ abstract class Week
             ':year' => $yearNumber
         ]);
         $result = $statement->fetchColumn();
-        if ($result == '1') {
+        if ($result === '1') {
             return true;
         } else {
             return false;
@@ -90,7 +90,7 @@ abstract class Week
             ':year' => $yearNumber
         ]);
         $result = $statement->fetchColumn();
-        if ($result == '0') {
+        if ($result === '0') {
             return true;
         } else {
             return false;
