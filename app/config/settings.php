@@ -14,6 +14,8 @@ define("LOGO_PATH", IMAGES_PATH . "/vollingo-logo.png");
 define("BASE_PATH", "/");
 
 //Define necessary constants for this project
+define('MIN_YEAR', 2018); //The minimum displayable year
+define('MAX_YEAR', 2050); //The maximum displayable year
 define("SEASON_START", 12); //First week of the beach volleyball season
 define("SEASON_END", 24); //Last week of the beach volleyball season
 define("STANDARD_BLOCK_LENGTH", 1.000); //Standard length of a time block

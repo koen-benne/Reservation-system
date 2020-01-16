@@ -9,8 +9,6 @@ use ReservationSystem\Day\DisabledDay;
 class DisabledWeek extends Week
 {
 
-    private $days = [];
-
     public function __construct()
     {
         $this->days = [

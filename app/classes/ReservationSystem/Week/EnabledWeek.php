@@ -10,9 +10,8 @@ use ReservationSystem\Day\EnabledDay;
 
 class EnabledWeek
 {
-    private $days;
 
-    public function __construct(int $weekNumber)
+    public function __construct(\PDO $db, int $weekNumber)
     {
         $this->days = [
             1 => new EnabledDay(1),

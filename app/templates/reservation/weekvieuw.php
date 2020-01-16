@@ -9,6 +9,7 @@
     <?php else: ?>
         <div id="login">
             <a href="login">Log In</a>
+            <a href="signin">Sign Up</a>
         </div>
     <?php endif ?>
 </header>

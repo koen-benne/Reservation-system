@@ -27,30 +27,47 @@ class ReservationHandler extends BaseHandler
     protected function weekVieuw(): void
     {
 
+        //Get year to display
+        $reload = false;
+        $currentYearNumber = date('Y');
+        $yearNumber = $_GET['y'] ?? ($this->session->keyExists('yearNumber') ? $this->session->get('yearNumber') : $currentYearNumber);
+        $yearNumber = intval($yearNumber);
+
         //Get week to display
         $currentWeekNumber = date('W');
-        $weekNumber = $_GET["w"] ?? ($this->session->get('weekNumber') ?? 0);
+        $weekNumber = $_GET["w"] ?? ($this->session->keyExists('weekNumber') ? $this->session->get('weekNumber') : $currentWeekNumber);
         $weekNumber = intval($weekNumber);
-        if ($weekNumber > 52 || $weekNumber <= 0) {
-            header("Location: ?w=" . intval($currentWeekNumber));
-            exit;
-        }
 
-        //Navigate weeks if one of the buttons is pressed
+        //Navigate weeks/years if one of the buttons is pressed
         if (isset($_POST['previousWeekBtn'])) {
             $weekNumber--;
-            header("Location: ?w=" . $weekNumber);
-            exit;
+            if ($weekNumber == 0) {
+                $weekNumber = 52;
+                $yearNumber--;
+            }
         }
         if (isset($_POST['nextWeekBtn'])) {
             $weekNumber++;
-            header("Location: ?w=" . $weekNumber);
-            exit;
+            if ($weekNumber == 52) {
+                $weekNumber = 1;
+                $yearNumber++;
+            }
         }
+
+        //Check week and year and adjust if necessary
+        if ($yearNumber < MIN_YEAR || $yearNumber <= 0 || $yearNumber > MAX_YEAR) {
+            $yearNumber = intval($currentYearNumber);
+        }
+        if ($weekNumber > 52 || $weekNumber <= 0) {
+            $weekNumber = intval($currentWeekNumber);
+        }
+
+        //Set session keys
         $this->session->set('weekNumber', $weekNumber);
+        $this->session->set('yearNumber', $yearNumber);
 
         //Set variables
-        $displayedWeek = Week\Week::weekInit($weekNumber);
+        $displayedWeek = Week\Week::weekInit($this->db, $weekNumber, $yearNumber);
         $dayBackground = "";
         $hoursAmount = DAY_END - DAY_START;
         $isLoggedIn = false;

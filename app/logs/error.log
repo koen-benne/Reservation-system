@@ -23,3 +23,9 @@
 [15-01-2020 08:41] Undefined index: weekNumber on line 41 of /var/source/app/classes/ReservationSystem/Utils/Session.php
 [15-01-2020 08:45] Undefined index: weekNumber on line 41 of /var/source/app/classes/ReservationSystem/Utils/Session.php
 [15-01-2020 08:47] Undefined index: weekNumber on line 41 of /var/source/app/classes/ReservationSystem/Utils/Session.php
+[15-01-2020 12:12] Undefined index: weekNumber on line 41 of /var/source/app/classes/ReservationSystem/Utils/Session.php
+[15-01-2020 12:12] Undefined index: weekNumber on line 41 of /var/source/app/classes/ReservationSystem/Utils/Session.php
+[16-01-2020 14:10] Undefined variable: yearNumber on line 16 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[16-01-2020 15:39] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' year = '2020'' at line 1 on line 63 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[16-01-2020 15:42] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' year = '2020'' at line 1 on line 63 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[16-01-2020 15:44] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' year = '2020'' at line 1 on line 63 of /var/source/app/classes/ReservationSystem/Week/Week.php

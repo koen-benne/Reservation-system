@@ -9,7 +9,7 @@
 .vagrant/
 .vagrantuser
 Vagrantfile
-_scripts
+_scripts/
 
 # Logs folder
 app/logs/

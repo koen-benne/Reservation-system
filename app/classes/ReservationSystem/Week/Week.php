@@ -4,19 +4,27 @@
 namespace ReservationSystem\Week;
 
 
+use ReservationSystem\Databases\Database;
+
 abstract class Week
 {
 
-    private $weekNumber;
-    private $days;
+    protected $db, $weekNumber, $yearNumber, $days;
 
-    public static function weekInit(int $weekNumber)
+    public static function weekInit(\PDO $db, int $weekNumber, int $yearNumber)
     {
-
         if (Week::isOnSeasonWeek($weekNumber)) {
-            return new EnabledWeek($weekNumber);
+             if (Week::isDisabledWeek($db, $weekNumber, $yearNumber)) {
+                 return new DisabledWeek();
+             } else {
+                 return new EnabledWeek($db, $weekNumber, $yearNumber);
+             }
         } else {
-            return new DisabledWeek();
+            if (Week::isEnabledWeek($db, $weekNumber, $yearNumber)) {
+                return new EnabledWeek($db, $weekNumber, $yearNumber);
+            } else {
+                return new DisabledWeek();
+            }
         }
     }
 
@@ -41,6 +49,48 @@ abstract class Week
     {
         //Return true if the given week is within the beach volleyball season
         if ($weekNumber > SEASON_START && $weekNumber < SEASON_END) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * @param \PDO $db
+     * @param int $weekNumber
+     * @param int $yearNumber
+     * @return bool
+     */
+    public static function isEnabledWeek(\PDO $db, int $weekNumber, int $yearNumber): bool
+    {
+        $statement = $db->prepare("SELECT onseason FROM weeks WHERE weeknumber = :weekNumber and year = :year");
+        $statement->execute([
+            ':weekNumber' => $weekNumber,
+            ':year' => $yearNumber
+        ]);
+        $result = $statement->fetchColumn();
+        if ($result == '1') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * @param \PDO $db
+     * @param int $weekNumber
+     * @param int $yearNumber
+     * @return bool
+     */
+    public static function isDisabledWeek(\PDO $db, int $weekNumber, int $yearNumber): bool
+    {
+        $statement = $db->prepare("SELECT onseason FROM weeks WHERE weeknumber = :weekNumber and year = :year");
+        $statement->execute([
+            ':weekNumber' => $weekNumber,
+            ':year' => $yearNumber
+        ]);
+        $result = $statement->fetchColumn();
+        if ($result == '0') {
             return true;
         } else {
             return false;
