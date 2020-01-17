@@ -18,7 +18,7 @@
         <div id="weekSelector">
             <form id="weekNav" action="" method="post"></form>
             <button name="previousWeekBtn" form="weekNav" type="submit" value="0"><</button>
-            <h2 id="weekLabel"><?= "Week " . $weekNumber; ?></h2>
+            <h2 id="weekLabel"><?= $yearNumber . " Week " . $weekNumber; ?></h2>
             <button name="nextWeekBtn" form="weekNav" type="submit" value="0">></button>
         </div>
         <table id="planning">

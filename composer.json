@@ -10,7 +10,10 @@
     }
   ],
   "minimum-stability": "stable",
-  "require": {},
+  "require": {
+    "ext-pdo": "*",
+    "ext-fileinfo": "*"
+  },
 
   "config": {
     "vendor-dir": "app/vendor"

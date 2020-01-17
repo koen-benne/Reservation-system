@@ -30,12 +30,12 @@ class ReservationHandler extends BaseHandler
         //Get year to display
         $reload = false;
         $currentYearNumber = date('Y');
-        $yearNumber = $_GET['y'] ?? ($this->session->keyExists('yearNumber') ? $this->session->get('yearNumber') : $currentYearNumber);
+        $yearNumber = $this->session->keyExists('yearNumber') ? $this->session->get('yearNumber') : $currentYearNumber;
         $yearNumber = intval($yearNumber);
 
         //Get week to display
         $currentWeekNumber = date('W');
-        $weekNumber = $_GET["w"] ?? ($this->session->keyExists('weekNumber') ? $this->session->get('weekNumber') : $currentWeekNumber);
+        $weekNumber = $this->session->keyExists('weekNumber') ? $this->session->get('weekNumber') : $currentWeekNumber;
         $weekNumber = intval($weekNumber);
 
         //Navigate weeks/years if one of the buttons is pressed
@@ -45,6 +45,10 @@ class ReservationHandler extends BaseHandler
                 $weekNumber = 52;
                 $yearNumber--;
             }
+            $this->session->set('weekNumber', $weekNumber);
+            $this->session->set('yearNumber', $yearNumber);
+            header("Location:/");
+            exit;
         }
         if (isset($_POST['nextWeekBtn'])) {
             $weekNumber++;
@@ -52,6 +56,10 @@ class ReservationHandler extends BaseHandler
                 $weekNumber = 1;
                 $yearNumber++;
             }
+            $this->session->set('weekNumber', $weekNumber);
+            $this->session->set('yearNumber', $yearNumber);
+            header("Location:/");
+            exit;
         }
 
         //Check week and year and adjust if necessary
@@ -89,6 +97,7 @@ class ReservationHandler extends BaseHandler
             "isLoggedIn" => $isLoggedIn,
             'hoursAmount' => $hoursAmount,
             'weekNumber' => $weekNumber,
+            'yearNumber' => $yearNumber,
             'dayBackground' => $dayBackground,
             'displayedWeek' => $displayedWeek
         ]);
