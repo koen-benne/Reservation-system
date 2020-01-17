@@ -35,8 +35,7 @@ class EnabledWeek extends Week
      * @param int $weekNumber
      * @param int $dayNumber
      * @param int $yearNumber
-     * @return EnabledDay
-     * @return DisabledDay
+     * @return mixed
      */
     public static function initDay(\PDO $db, int $weekNumber, int $dayNumber, int $yearNumber)
     {
@@ -57,7 +56,6 @@ class EnabledWeek extends Week
             return new DisabledDay($dayNumber, $result["date"]);
         }
 
-        var_dump($result);
         return new StandardDay($dayNumber, $result["date"]);
     }
 
