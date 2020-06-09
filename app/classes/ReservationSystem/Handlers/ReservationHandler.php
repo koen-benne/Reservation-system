@@ -2,6 +2,7 @@
 
 namespace ReservationSystem\Handlers;
 
+use ReservationSystem\Block\ReservationBlock;
 use ReservationSystem\Week;
 use ReservationSystem\Databases\Database;
 
@@ -26,9 +27,15 @@ class ReservationHandler extends BaseHandler
 
     protected function weekVieuw(): void
     {
+        if (isset($_POST["submitAdd"])) {
+            $field = (int)$_POST["fieldSelector"];
+            if ($field > 1 || $field < 3) {
+                Block::reserve($field);
+                header("Location:/");
+            }
+        }
 
         //Get year to display
-        $reload = false;
         $currentYearNumber = date('Y');
         $yearNumber = $this->session->keyExists('yearNumber') ? $this->session->get('yearNumber') : $currentYearNumber;
         $yearNumber = intval($yearNumber);
@@ -41,7 +48,7 @@ class ReservationHandler extends BaseHandler
         //Navigate weeks/years if one of the buttons is pressed
         if (isset($_POST['previousWeekBtn'])) {
             $weekNumber--;
-            if ($weekNumber == 0) {
+            if ($weekNumber < 1) {
                 $weekNumber = 52;
                 $yearNumber--;
             }
@@ -52,7 +59,7 @@ class ReservationHandler extends BaseHandler
         }
         if (isset($_POST['nextWeekBtn'])) {
             $weekNumber++;
-            if ($weekNumber == 52) {
+            if ($weekNumber > 52) {
                 $weekNumber = 1;
                 $yearNumber++;
             }
@@ -76,11 +83,17 @@ class ReservationHandler extends BaseHandler
 
         //Set variables
         $displayedWeek = Week\Week::weekInit($this->db, $weekNumber, $yearNumber);
+        $daysArray = $displayedWeek->getDaysArray();
         $dayBackground = "";
         $hoursAmount = DAY_END - DAY_START;
         $isLoggedIn = false;
         if ($this->session->keyExists('user')) {
             $isLoggedIn = true;
+            $username = $this->session->get('user')->username;
+            $userId = $this->session->get('user')->id;
+        } else {
+            $username = "?";
+            $userId = null;
         }
 
         //Create background for a day
@@ -90,16 +103,21 @@ class ReservationHandler extends BaseHandler
             <tr><td class='second'></td></tr>
             ";
         }
-
         //Return formatted data
         $this->renderTemplate([
             'pageTitle' => 'Reserveren',
-            "isLoggedIn" => $isLoggedIn,
+            'style' => 'reservationStyles',
+            'isLoggedIn' => $isLoggedIn,
+            'username' => $username,
+            'userId' => $userId,
             'hoursAmount' => $hoursAmount,
             'weekNumber' => $weekNumber,
             'yearNumber' => $yearNumber,
             'dayBackground' => $dayBackground,
-            'displayedWeek' => $displayedWeek
+            'displayedWeek' => $displayedWeek,
+            'daysArray' => $daysArray,
+            'weekId' => $displayedWeek->getId()
         ]);
     }
+
 }

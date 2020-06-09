@@ -9,22 +9,21 @@ use ReservationSystem\Databases\Database;
 abstract class Week
 {
 
-    protected $db, $weekNumber, $yearNumber, $days;
+    protected $db, $weekNumber, $yearNumber, $days, $id;
 
+
+    /**
+     * @param \PDO $db
+     * @param int $weekNumber
+     * @param int $yearNumber
+     * @return DisabledWeek|EnabledWeek
+     */
     public static function weekInit(\PDO $db, int $weekNumber, int $yearNumber)
     {
         if (Week::isOnSeasonWeek($weekNumber)) {
-             if (Week::isDisabledWeek($db, $weekNumber, $yearNumber)) {
-                 return new DisabledWeek();
-             } else {
-                 return new EnabledWeek($db, $weekNumber, $yearNumber);
-             }
+            return Week::getOnSeasonWeek($db, $weekNumber, $yearNumber);
         } else {
-            if (Week::isEnabledWeek($db, $weekNumber, $yearNumber)) {
-                return new EnabledWeek($db, $weekNumber, $yearNumber);
-            } else {
-                return new DisabledWeek();
-            }
+            return Week::getOffSeasonWeek($db, $weekNumber, $yearNumber);
         }
     }
 
@@ -59,20 +58,21 @@ abstract class Week
      * @param \PDO $db
      * @param int $weekNumber
      * @param int $yearNumber
-     * @return bool
+     * @return DisabledWeek|EnabledWeek
      */
-    public static function isEnabledWeek(\PDO $db, int $weekNumber, int $yearNumber): bool
+    public static function getOffSeasonWeek(\PDO $db, int $weekNumber, int $yearNumber)
     {
-        $statement = $db->prepare("SELECT onseason FROM weeks WHERE weeknumber = :weekNumber and year = :year");
+        $statement = $db->prepare("SELECT id, onseason FROM weeks WHERE week_number = :week_number and year = :year");
         $statement->execute([
-            ':weekNumber' => $weekNumber,
+            ':week_number' => $weekNumber,
             ':year' => $yearNumber
         ]);
-        $result = $statement->fetchColumn();
-        if ($result === '1') {
-            return true;
+
+        $result = $statement->fetch();
+        if ($result['onseason'] === '1') {
+            return new EnabledWeek($db, $result['id'], $weekNumber, $yearNumber);
         } else {
-            return false;
+            return new DisabledWeek($weekNumber, $yearNumber);
         }
     }
 
@@ -80,21 +80,32 @@ abstract class Week
      * @param \PDO $db
      * @param int $weekNumber
      * @param int $yearNumber
-     * @return bool
+     * @return DisabledWeek|EnabledWeek
      */
-    public static function isDisabledWeek(\PDO $db, int $weekNumber, int $yearNumber): bool
+    public static function getOnSeasonWeek(\PDO $db, int $weekNumber, int $yearNumber)
     {
-        $statement = $db->prepare("SELECT onseason FROM weeks WHERE weeknumber = :weekNumber and year = :year");
+        $statement = $db->prepare("SELECT id, onseason FROM weeks WHERE week_number = :weekNumber and year = :year");
         $statement->execute([
             ':weekNumber' => $weekNumber,
             ':year' => $yearNumber
         ]);
-        $result = $statement->fetchColumn();
-        if ($result === '0') {
-            return true;
+        $result = $statement->fetch();
+
+        if ($result['onseason'] === '0') {
+            return new DisabledWeek($weekNumber, $yearNumber);
         } else {
-            return false;
+            return new EnabledWeek($db, $result['id'], $weekNumber, $yearNumber);
         }
+    }
+
+    public function getDaysArray(): array
+    {
+        return $this->days;
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
     }
 
 }

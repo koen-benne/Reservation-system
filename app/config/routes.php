@@ -1,5 +1,9 @@
 <?php
 $routes = [
     '/' => 'ReservationHandler@weekVieuw',
-    '/login' => 'AccountHandler@login'
+    '/book' => 'ReservationHandler@book',
+    '/login' => 'AccountHandler@login',
+    '/signin' => 'AccountHandler@signin',
+    '/logout' => 'AccountHandler@logout',
+    '/user' => 'AccountHandler@user'
 ];

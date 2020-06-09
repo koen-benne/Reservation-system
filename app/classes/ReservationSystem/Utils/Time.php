@@ -4,6 +4,8 @@
 namespace ReservationSystem\Utils;
 
 
+use mysql_xdevapi\Exception;
+
 class Time
 {
 
@@ -139,7 +141,13 @@ class Time
 
     public function getString(): string
     {
-        return $this->hours . ":" . $this->minutes;
+        if (strlen(strval($this->minutes)) < 2) {
+            $minutes = "0" . $this->minutes;
+        } else {
+            $minutes = $this->minutes;
+        }
+
+        return $this->hours . ":" . $minutes;
     }
 
     public function toHours(): float
@@ -150,6 +158,12 @@ class Time
     public static function intsToHours(int $hours, int $minutes): float
     {
         return $hours + $minutes / 60;
+    }
+
+    public static function stringToTime(string $time): Time
+    {
+        $time = explode(":", $time);
+        return new Time($time[0], $time[1]);
     }
 
 }

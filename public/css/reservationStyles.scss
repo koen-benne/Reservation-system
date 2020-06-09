@@ -1,0 +1,277 @@
+$halfHourHeight: 25px;
+$backgroundColor: #DDDDDD;
+$blockBorderRadius: 4px;
+$lineSize: 1px;
+
+body {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  font-family: sans-serif, Helvetica, Arial;
+  max-width: 1200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/************************************** header css **************************************/
+header {
+  display: flex;
+  width: 100%;
+  padding-top: 15px;
+}
+
+h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
+  height: fit-content;
+  display: flex;
+}
+
+#login {
+  height: fit-content;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 5px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+#login p, a {
+  margin: 0;
+}
+
+#logo {
+  margin-top: 8px;
+  max-height: 100px;
+  width: auto;
+  margin-right: 30px;
+}
+
+/************************************** week selector css ******************************/
+#weekSelector {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: 5px;
+}
+
+#weekLabel {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  margin: 0;
+}
+
+#nextWeekBtn {
+  font-size: 15px;
+  border-radius: 5px;
+  height: 20px;
+  background: none;
+  width: 20px;
+}
+
+#previousWeekBtn {
+  font-size: 15px;
+  border-radius: 5px;
+  height: 20px;
+  background: none;
+  width: 20px
+}
+
+/************************************** planning css ***********************************/
+#planning {
+  width: 100%;
+  border-right: $lineSize solid grey;
+  border-bottom: $lineSize solid grey;
+}
+
+#hourLabel {
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+#hours {
+  background-color: lightgray;
+  padding: 0;
+}
+
+#planning th {
+  border-top: 1px solid grey;
+  border-collapse: collapse;
+  width: 14%;
+  padding: 0;
+}
+
+.day {
+  padding: 0;
+  position: relative;
+}
+
+/* Days background css */
+.daysBackground {
+  width: 100%;
+}
+
+.first {
+  height: $halfHourHeight;
+  background-color: $backgroundColor;
+  padding: 0;
+  border: $lineSize grey;
+  border-top-style: solid;
+  border-left-style: solid;
+  text-align: center;
+}
+.second {
+  height: $halfHourHeight;
+  background-color: $backgroundColor;
+  padding: 0;
+  border-top: $lineSize dashed grey;
+  border-left: $lineSize solid grey;
+  text-align: center;
+}
+
+#bookForm {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+/************************************** Block css ****************************************/
+.blockContainer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 20%;
+  margin-right: 2 + $lineSize;
+  margin-left: 2px;
+}
+
+.block {
+  color: white;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  margin-top: 2px;
+  top: 0;
+  bottom: 0;
+  margin-bottom: 1px;
+  border: 1px solid black;
+  border-radius: $blockBorderRadius;
+}
+
+.reservationBlock {
+  background-color: #1494fc;
+}
+
+.specialBlock {
+  background-color: #fc6e5d;
+}
+
+.blockTimeBar {
+  bottom: 1px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  background-color: blue;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.blockContent {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.fieldSection {
+  display: block;
+  float: left;
+  width: 33.3333333%;
+  height: 100%;
+}
+
+.midFieldSection {
+  z-index: 2;
+  margin-left: -1px;
+  margin-right: -1px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.infoContent {
+  padding: 1px 0 0 2px;
+  line-height: 1;
+  display: block;
+  float: left;
+}
+
+.mySection {
+  background-color: #b6eafc;
+}
+
+.reservedSection {
+  background-color: #fc6e5d;
+}
+
+/************************************** Modal css ****************************************/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Modal Content */
+.modalContent {
+  overflow: hidden;
+  max-width: 490px;
+  width: 65%;
+  height: 370px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+#modalHeader {
+  text-align: center;
+  margin: 3px 0 30px 0;
+  font-size: 40px;
+}
+
+#reservationForm {
+  text-align: center;
+}
+
+/* The Close Button */
+.modalClose {
+  color: #aaaaaa;
+  font-size: 28px;
+  float: right;
+  font-weight: bold;
+}
+
+.modalClose:hover,
+.modalClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

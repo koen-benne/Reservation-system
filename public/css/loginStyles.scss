@@ -1,0 +1,37 @@
+body {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  font-family: sans-serif, Helvetica, Arial;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+}
+
+#loginBox {
+  padding: 10px;
+  background-color: #e2e2e2;
+  margin-top: 20px;
+  height: 300px;
+  width: 500px;
+  border: 1px solid grey;
+}
+
+#loginForm label {
+  display: block;
+  float: left;
+}
+
+#loginForm {
+  text-align: right;
+}
+
+#loginForm input {
+  margin-right: 300px;
+}
+
+#submit {
+  display: block;
+  margin-top: 218px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 25px;
+}

@@ -8,55 +8,50 @@ use ReservationSystem\Day\Day;
 use ReservationSystem\Day\DisabledDay;
 use ReservationSystem\Day\EnabledDay;
 use ReservationSystem\Day\StandardDay;
+use ReservationSystem\Utils\Date;
 
 class EnabledWeek extends Week
 {
 
-    public function __construct(\PDO $db, int $weekNumber, int $yearNumber)
+    public function __construct(\PDO $db, $id, int $weekNumber, int $yearNumber)
     {
 
+        $this->id = $id;
+
         for ($i = 1; $i <= 7; $i++) {
-            $this->days[] = EnabledWeek::initDay($db, $weekNumber, $i, $yearNumber);
+            $this->days[] = EnabledWeek::getDay($db, $id, $weekNumber, $i, $yearNumber);
         }
     }
 
-    public function getDaysArray(): array
-    {
-        return $this->days;
-    }
-
-    public function getDay()
-    {
-
-    }
 
     /**
      * @param \PDO $db
+     * @param int $id
      * @param int $weekNumber
      * @param int $dayNumber
      * @param int $yearNumber
      * @return mixed
      */
-    public static function initDay(\PDO $db, int $weekNumber, int $dayNumber, int $yearNumber)
+    public static function getDay(\PDO $db, $id, int $weekNumber, int $dayNumber, int $yearNumber)
     {
         $statement = $db->prepare(
-            "SELECT enabled, date FROM days WHERE weeknumber = :weekNumber and dayNumber = :dayNumber and date BETWEEN :firstDate AND :lastDate;");
+            "SELECT enabled, id FROM days WHERE weeks_id = :weeks_id AND day_number = :day_number;");
         $statement->execute([
-            ':weekNumber' => $weekNumber,
-            ':dayNumber' => $dayNumber,
-            ':firstDate' => $yearNumber . "-01-01",
-            ':lastDate' => $yearNumber . "-12-30"
+            ':day_number' =>$dayNumber,
+            ':weeks_id' => $id
         ]);
 
         $result = $statement->fetch();
 
-        if ($result["enabled"] === '1') {
-            return new EnabledDay($dayNumber, $result["date"]);
-        } else if ($result["enabled"] === '0') {
-            return new DisabledDay($dayNumber, $result["date"]);
-        }
+        $date = Date::getDate($dayNumber, $weekNumber, $yearNumber);
 
-        return new StandardDay($dayNumber, $result["date"]);
+        if ($result["enabled"] === '1') {
+            return new EnabledDay($result['id'], $dayNumber, $date, $db);
+        } else if ($result["enabled"] === '0') {
+            return new DisabledDay($date, $dayNumber);
+        } else {
+            return new StandardDay($date, $dayNumber);
+        }
     }
 
 }

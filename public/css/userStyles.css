@@ -1,0 +1,15 @@
+body {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  font-family: sans-serif, Helvetica, Arial;
+  max-width: 1200px;
+}
+
+#remove {
+  margin-top: 50px;
+  font-size: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=userStyles.css.map */

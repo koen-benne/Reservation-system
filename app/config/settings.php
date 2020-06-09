@@ -18,7 +18,7 @@ define('MIN_YEAR', 2018); //The minimum displayable year
 define('MAX_YEAR', 2050); //The maximum displayable year
 define("SEASON_START", 12); //First week of the beach volleyball season
 define("SEASON_END", 24); //Last week of the beach volleyball season
-define("STANDARD_BLOCK_LENGTH", 1.000); //Standard length of a time block
+define("STANDARD_BLOCK_LENGTH", 1); //Standard length of a time block
 define("DAY_START", 7); //The start of the displayed day (takes hours)
 define("DAY_END", 22); //The end of the displayed day (takes hours)
 

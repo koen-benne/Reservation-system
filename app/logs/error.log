@@ -36,3 +36,299 @@
 [17-01-2020 15:28] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and days WHERE weeknumber = '3' and dayNumber = '1' and date BETWEEN '2021-01-01' at line 1 on line 48 of /var/source/app/classes/ReservationSystem/Week/EnabledWeek.php
 [17-01-2020 15:32] Use of undefined constant enabled - assumed 'enabled' (this will throw an Error in a future version of PHP) on line 53 of /var/source/app/classes/ReservationSystem/Week/EnabledWeek.php
 [17-01-2020 15:32] Use of undefined constant enabled - assumed 'enabled' (this will throw an Error in a future version of PHP) on line 53 of /var/source/app/classes/ReservationSystem/Week/EnabledWeek.php
+[19-01-2020 14:06] The value given to Time must be in between the $DAY_START and $DAY_END values. on line 53 of /var/source/app/classes/ReservationSystem/Utils/Time.php
+[19-01-2020 14:06] The value given to Time must be in between the $DAY_START and $DAY_END values. on line 53 of /var/source/app/classes/ReservationSystem/Utils/Time.php
+[19-01-2020 14:06] The value given to Time must be in between the $DAY_START and $DAY_END values. on line 53 of /var/source/app/classes/ReservationSystem/Utils/Time.php
+[19-01-2020 22:20] 0 on line 150 of /var/source/app/classes/ReservationSystem/Utils/Time.php
+[19-01-2020 22:20] 1 on line 150 of /var/source/app/classes/ReservationSystem/Utils/Time.php
+[21-01-2020 18:47] Undefined index: starttime on line 46 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[21-01-2020 18:47] Undefined index: starttime on line 46 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[21-01-2020 18:47] Undefined index: starttime on line 46 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[21-01-2020 18:47] Undefined index: start_time on line 46 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[21-01-2020 18:55] The value given to Time must be in between the $DAY_START and $DAY_END values. on line 55 of /var/source/app/classes/ReservationSystem/Utils/Time.php
+[21-01-2020 18:57] Undefined index: length on line 44 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[22-01-2020 10:41] Undefined variable: id on line 14 of /var/source/app/classes/ReservationSystem/Block/SpecialBlock.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:30] Undefined variable: availability on line 116 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:32] Undefined variable: availability on line 117 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[22-01-2020 11:37] Undefined variable: availability on line 120 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[26-01-2020 12:11] Undefined variable: availability on line 122 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[28-01-2020 15:46] Array to string conversion on line 64 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 15:46] Array to string conversion on line 64 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 15:48] Array to string conversion on line 64 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 15:49] Array to string conversion on line 64 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 15:50] Array to string conversion on line 63 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 15:50] Array to string conversion on line 64 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 15:51] Array to string conversion on line 64 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 18:33] Undefined index: email on line 45 of /var/source/app/classes/ReservationSystem/Form/Data.php
+[28-01-2020 18:35] Undefined index: email on line 45 of /var/source/app/classes/ReservationSystem/Form/Data.php
+[28-01-2020 18:38] Undefined index: password on line 45 of /var/source/app/classes/ReservationSystem/Form/Data.php
+[28-01-2020 18:38] Undefined index: password on line 45 of /var/source/app/classes/ReservationSystem/Form/Data.php
+[28-01-2020 18:41] Array to string conversion on line 3 of /var/source/app/templates/account/login.php
+[28-01-2020 18:47] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' on line 31 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 18:47] Undefined property: ReservationSystem\User\User::$name on line 31 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 18:47] Undefined property: ReservationSystem\User\User::$name on line 31 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 18:48] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' on line 31 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 18:50] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usernane' in 'field list' on line 31 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 18:51] Use of undefined constant test - assumed 'test' (this will throw an Error in a future version of PHP) on line 34 of /var/source/app/classes/ReservationSystem/Form/Validation/LoginValidator.php
+[28-01-2020 19:06] Undefined variable: username on line 101 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[28-01-2020 19:06] Undefined variable: username on line 101 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[28-01-2020 19:07] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'moora@hr.nl' for key 'user_email_uindex' on line 15 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 21:55] Undefined variable: userId on line 68 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 21:55] Undefined variable: userId on line 68 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 21:56] Undefined variable: userId on line 68 of /var/source/app/templates/reservation/weekVieuw.php
+[28-01-2020 22:27] Undefined variable: username on line 114 of /var/source/app/classes/ReservationSystem/Handlers/AccountHandler.php
+[28-01-2020 22:28] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'moora@hr.nl' for key 'user_email_uindex' on line 15 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 22:28] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'moora@hr.nl' for key 'user_email_uindex' on line 15 of /var/source/app/classes/ReservationSystem/User/User.php
+[28-01-2020 22:49] count(): Parameter must be an array or an object that implements Countable on line 42 of /var/source/app/classes/ReservationSystem/Form/Validation/SigninValidator.php
+[28-01-2020 22:57] Undefined variable: email on line 101 of /var/source/app/classes/ReservationSystem/Handlers/AccountHandler.php
+[28-01-2020 22:59] Undefined variable: email on line 101 of /var/source/app/classes/ReservationSystem/Handlers/AccountHandler.php
+[28-01-2020 23:00] Undefined property: ReservationSystem\Form\Validation\SigninValidator::$db on line 38 of /var/source/app/classes/ReservationSystem/Form/Validation/SigninValidator.php
+[28-01-2020 23:04] User email is not available in the database on line 27 of /var/source/app/classes/ReservationSystem/User/User.php
+[29-01-2020 09:56] Undefined variable: style on line 13 of /var/source/app/templates/master.php
+[29-01-2020 10:00] Undefined variable: style on line 13 of /var/source/app/templates/master.php
+[29-01-2020 10:00] Undefined variable: style on line 13 of /var/source/app/templates/master.php
+[29-01-2020 10:01] Undefined variable: style on line 13 of /var/source/app/templates/master.php
+[04-02-2020 15:52] Undefined index: day_id on line 40 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[04-02-2020 16:06] Undefined variable: day on line 13 of /var/source/app/classes/ReservationSystem/Day/DisabledDay.php
+[04-02-2020 16:06] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:06] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:08] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:12] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\DisabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\StandardDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:13] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:15] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:15] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:17] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:18] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:18] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:19] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:20] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:20] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:20] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:21] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:23] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:24] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:24] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:25] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:25] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:27] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:27] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:28] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:30] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[04-02-2020 16:31] Undefined property: ReservationSystem\Day\EnabledDay::$day on line 13 of /var/source/app/classes/ReservationSystem/Day/Day.php
+[05-02-2020 15:55] Undefined property: ReservationSystem\Block\ReservationBlock::$getStyles on line 96 of /var/source/app/classes/ReservationSystem/Block/Block.php
+[05-02-2020 16:04] Non-static method ReservationSystem\Block\Block::getBlock() should not be called statically on line 67 of /var/source/app/templates/reservation/weekVieuw.php
+[05-02-2020 16:04] Non-static method ReservationSystem\Block\Block::getBlock() should not be called statically on line 67 of /var/source/app/templates/reservation/weekVieuw.php
+[05-02-2020 16:04] Undefined property: ReservationSystem\Block\ReservationBlock::$getStyles on line 96 of /var/source/app/classes/ReservationSystem/Block/Block.php
+[05-02-2020 16:06] Undefined property: ReservationSystem\Block\ReservationBlock::$getStyles on line 96 of /var/source/app/classes/ReservationSystem/Block/Block.php
+[05-02-2020 16:07] Undefined property: ReservationSystem\Block\ReservationBlock::$getStyles on line 98 of /var/source/app/classes/ReservationSystem/Block/Block.php
+[05-02-2020 16:07] Undefined variable: block on line 98 of /var/source/app/classes/ReservationSystem/Block/Block.php
+[05-02-2020 16:08] Undefined variable: block on line 98 of /var/source/app/classes/ReservationSystem/Block/Block.php
+[05-02-2020 18:04] Undefined index: user_id on line 48 of /var/source/app/classes/ReservationSystem/Day/EnabledDay.php
+[05-02-2020 22:51] Illegal string offset 'id' on line 65 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[05-02-2020 22:57] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'weeknumber' in 'where clause' on line 61 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[05-02-2020 22:58] Illegal string offset 'id' on line 65 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[05-02-2020 22:59] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'week_id' in 'where clause' on line 39 of /var/source/app/classes/ReservationSystem/Week/EnabledWeek.php
+[23-03-2020 08:21] Undefined variable: result on line 88 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[23-03-2020 08:27] Undefined variable: result on line 89 of /var/source/app/classes/ReservationSystem/Week/Week.php
+[23-03-2020 12:01] Undefined property: ReservationSystem\Week\EnabledWeek::$getId on line 112 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php
+[23-03-2020 12:03] Undefined property: ReservationSystem\Week\EnabledWeek::$getId on line 112 of /var/source/app/classes/ReservationSystem/Handlers/ReservationHandler.php

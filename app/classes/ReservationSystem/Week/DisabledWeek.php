@@ -5,21 +5,16 @@ namespace ReservationSystem\Week;
 
 
 use ReservationSystem\Day\DisabledDay;
+use ReservationSystem\Utils\Date;
 
 class DisabledWeek extends Week
 {
 
-    public function __construct()
+    public function __construct(int $weekNumber, int $yearNumber)
     {
-        $this->days = [
-        1 => new DisabledDay(1),
-        2 => new DisabledDay(2),
-        3 => new DisabledDay(3),
-        4 => new DisabledDay(4),
-        5 => new DisabledDay(5),
-        6 => new DisabledDay(6),
-        7 => new DisabledDay(7)
-        ];
+        for ($i = 1; $i <= 7; $i++) {
+            $this->days[] = new DisabledDay(Date::getDate($i, $weekNumber, $yearNumber), $i);
+        }
     }
 
     public function getDaysArray() : Array
